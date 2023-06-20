@@ -50,8 +50,9 @@ nav ul li a:hover {
 }
 
 nav img {
-    height: 50px;
+    height: 42px;
 }
+
 
 .featured {
     display: flex;
