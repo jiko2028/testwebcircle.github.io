@@ -1,0 +1,157 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url(asset/background.webp);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 120px;
+    background-color: #1d232a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.9);
+}
+
+nav ul {
+    /* display: flex; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffc10e;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel-image {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+nav ul li a:hover {
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+nav img {
+    height: 50px;
+}
+
+.featured {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.featured-item {
+
+    flex: 1;
+    /* margin-right: 20px;
+    margin-left: 20px; */
+    border: none;
+    padding: 10px;
+}
+
+.featured-item {
+    text-align: center;
+}
+
+.featured p {
+    color: white;
+}
+
+div h2 {
+    color: #ffffff;
+    margin-top: 22px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 22px;
+}
+
+.button-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    /* margin-top: 50px; */
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #0b5ed7;
+    transition: all .4s ease-in-out;
+
+}
+
+.card-img-top.zoom {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.9);
+    transition: transform 0.4s;
+}
+
+.card-img-top.zoom:hover {
+    transform: scale(1.1);
+  }
+
+.custom-rounded {
+    border-radius: 5%;
+}
+
+.custom-shadow {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 768px) {
+    .featured {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-image {
+        height: 100%;
+    }
+}
