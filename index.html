@@ -16,18 +16,42 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="asset/logo/logo.png" alt="logo">
-        </a>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" target="_blank">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <section>
+        <header>
+            <div class="logo"><a href="index.html"><img src="asset/logo/logo.png" alt=""></a></div>
+            <div class="garis">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <script>
+             garis = document.querySelector(".garis");
+            garis.onclick = function () {
+                 navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+        </section>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="z-index: 0;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -128,13 +152,8 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>PRODUK TERLARIS</h2>
-        </div>
-    </section>
-
     <div class="container">
+        <h2>Produk Terlaris</h2>
         <div class="row mb-4">
             <div class="col-md-3 mt-4">
                 <div class="card h-100 bg-dark text-light border-0 custom-shadow">

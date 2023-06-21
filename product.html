@@ -16,16 +16,40 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="asset/logo/logo.png" alt="logo">
-        </a>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" target="_blank">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <section>
+        <header>
+            <div class="logo"><a href="#"><img src="asset/logo/logo.png" alt=""></a></div>
+            <div class="garis">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html" class="active">Product</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            garis = document.querySelector(".garis");
+            garis.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </section>
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -35,13 +59,8 @@
         </div>
     </div>
 
-    <section>
-        <div>
-            <h3>TOP 4 MOST SELLING PRODUCT</h3>
-        </div>
-    </section>
-
     <div class="container">
+        <h3>Top 4 Most Selling Product</h3>
         <div class="row mb-4">
             <div class="col-md-3 mt-4">
                 <div class="card h-100 bg-dark text-light border-0 custom-shadow">
@@ -96,13 +115,8 @@
         </div>
     </div>
 
-    <section>
-        <div>
-            <h3>OTHER OUR COLLECTIONS</h3>
-        </div>
-    </section>
-
     <div class="container">
+        <h3>Other Our Collections</h3>
         <div class="row  mb-4">
             <div class="col-md-3 mt-4">
                 <div class="card h-100 bg-dark text-light border-0 custom-shadow">
@@ -210,13 +224,8 @@
         </div>
     </div>
 
-    <section>
-        <div>
-            <h3>NEW COLLECTIONS</h3>
-        </div>
-    </section>
-
     <div class="container">
+        <h3>New Collections</h3>
         <div class="row mb-4">
             <div class="col-md-3 mt-4">
                 <div class="card h-100 bg-dark text-light border-0 custom-shadow">
@@ -330,13 +339,16 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">For More</h5>
                     <p>
-                        <a href="https://instagram.com/whoisjiko_?igshid=MzNlNGNkZWQ4Mg==" class="text-white" style="text-decoration: none;">Instagram : @whoisjiko</a>
+                        <a href="https://instagram.com/whoisjiko_?igshid=MzNlNGNkZWQ4Mg==" class="text-white"
+                            style="text-decoration: none;">Instagram : @whoisjiko</a>
                     </p>
                     <p>
-                        <a href="https://instagram.com/dimas1804?igshid=OGQ5ZDc2ODk2ZA==" class="text-white" style="text-decoration: none;">Instagram : @dimas1804</a>
+                        <a href="https://instagram.com/dimas1804?igshid=OGQ5ZDc2ODk2ZA==" class="text-white"
+                            style="text-decoration: none;">Instagram : @dimas1804</a>
                     </p>
                     <p>
-                        <a href="https://instagram.com/rmdhn_354?igshid=OGQ5ZDc2ODk2ZA==" class="text-white" style="text-decoration: none;">Instagram : @rmdhn_354</a>
+                        <a href="https://instagram.com/rmdhn_354?igshid=OGQ5ZDc2ODk2ZA==" class="text-white"
+                            style="text-decoration: none;">Instagram : @rmdhn_354</a>
                     </p>
                 </div>
 
