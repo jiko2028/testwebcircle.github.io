@@ -51,6 +51,11 @@ header {
     text-decoration: none;
 }
 
+.nav-bar ul li {
+    margin-right: 25px;
+}
+
+
 .nav-bar ul li a:hover {
     color: black;
     background-color: #ffc10e;
