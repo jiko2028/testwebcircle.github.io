@@ -1,3 +1,6 @@
+body {
+    background: url(asset/background.webp);
+}
 header {
     background-color: #1d232a;
     width: 100%;
@@ -59,6 +62,13 @@ header {
     color: black;
     background-color: #ffc10e;
 }
+
+.carousel-item img {
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
 
 @media only screen and (max-width: 768px) {
     header {
