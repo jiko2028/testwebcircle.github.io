@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickCircle!</title>
+    <link rel="icon" href="asset/logo/pngegg (1).png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <section>
+        <header>
+            <div class="logo"><a href="home.html"><img src="asset/logo/logo.png" alt=""></a></div>
+            <div class="garis">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="home.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            garis = document.querySelector(".garis");
+            garis.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </section>
+    <!--Akhir Navbar-->
+
+    <!--awal carousel-->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel" style="z-index: 0;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/sepatu 112.webp" class="d-block img-fluid" alt="adidas">
+                    <div class="carousel-caption d-none d-md-block text-warning">
+                        <h5>Adidas</h5>
+                        <p>Mau cari sepatu brand Adidas?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/carousel33.webp" class="d-block img-fluid" alt="nike">
+                    <div class="carousel-caption d-none d-md-block text-warning">
+                        <h5>Nike</h5>
+                        <p>Sneakers Nike Here!!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/sepatu 111.webp" class="d-block img-fluid" alt="vans">
+                    <div class="carousel-caption d-none d-md-block text-warning">
+                        <h5>Get Yours!!</h5>
+                        <p>All your footwear right here!!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--akhir carousel-->
+
+    <div class="text">
+        <h2>Kategori</h2>
+    </div>
+
+    <!--kategori-->
+        <div class="row mx-1">
+            <div class="col-md-4 mt-4">
+                <div class="card border-0 bg-transparent text-light text-center">
+                    <a href="kategori/olahraga.html"><img src="asset/airzoom2.webp"
+                            class="card-img-top card-img-top zoom custom-rounded" alt="dunk"></a>
+                    <div class="card-body">
+                        <h5 class="card-title ">Olahraga</h5>
+                        <p class="card-text"></p>
+                        <!-- <a href="#" class="btn btn-primary">Cek Disini</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card border-0 bg-transparent text-light text-center">
+                    <a href="kategori/formal.html"><img src="asset/formal2.webp" class="card-img-top card-img-top zoom custom-rounded"
+                            alt="dunk"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Formal</h5>
+                        <p class="card-text"></p>
+                        <!-- <a href="#" class="btn btn-primary">Cek Disini</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card border-0 bg-transparent text-light text-center">
+                    <a href="product.html"><img src="asset/adidas casual2.webp"
+                            class="card-img-top card-img-top zoom custom-rounded" alt="dunk"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Casual</h5>
+                        <p class="card-text"></p>
+                        <!-- <a href="#" class="btn btn-primary">Cek Disini</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="featured">
+        <div class="featured-item">
+            <h2>Sepatu Olahraga</h2>
+            <p>Temukan koleksi sepatu olahraga terbaru kami yang cocok untuk berbagai jenis aktivitas fisik. Sepatu ini
+                dirancang dengan teknologi terkini untuk memberikan kenyamanan dan performa maksimal.</p>
+        </div>
+
+        <div class="featured-item">
+            <h2>Sepatu Formal</h2>
+            <p>Jelajahi pilihan sepatu formal kami yang elegan dan stylish. Cocok untuk acara formal seperti pernikahan
+                atau pertemuan bisnis. Dengan desain yang modern dan bahan berkualitas tinggi, sepatu ini akan membuat
+                Anda tampil percaya diri.</p>
+        </div>
+
+        <div class="featured-item">
+            <h2>Sepatu Kasual</h2>
+            <p>Tingkatkan gaya sehari-hari Anda dengan sepatu kasual kami. Dengan berbagai model dan warna yang trendi,
+                sepatu ini cocok untuk berbagai kesempatan santai. Tampil modis dan nyaman sepanjang hari dengan sepatu
+                kasual kami.</p>
+        </div>
+    </div>
+    <!--akhir kategori-->
+
+    <!--produk terlaris awal-->
+    <div class="container">
+        <h2>Produk Terlaris</h2>
+        <div class="row mb-4 mt-4">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mb-4">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/panda.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Dunk Panda</h5>
+                        <p class="card-text">IDR1.440.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/dunk.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/adidas samba green.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Adidas Samba</h5>
+                        <p class="card-text">IDR1.800.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/samba.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mb-4">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/vans.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Vans Old Skool</h5>
+                        <p class="card-text">IDR1.199.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/vans.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/Nike Dunk Low Black White.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Air Force 1</h5>
+                        <p class="card-text">IDR1.799.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/low.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mb-4">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/NB 550.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">NB 550</h5>
+                        <p class="card-text">IDR4.790.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/550.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6">
+                <div class="card bg-dark text-light text-center border-0 custom-shadow">
+                    <img src="asset/NB MR530.webp" class="card-img-top" alt="dunk">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">NB 530</h5>
+                        <p class="card-text">IDR1.875.000</p>
+                        <a href="beli.html" class="btn btn-primary mb-2">Beli Sekarang</a>
+                        <a href="produk/530.html" class="btn btn-warning text-light">Deskripsi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--produk terlaris akhir-->
+
+    <div class="button-end">
+
+        <a href="product.html" class="btn2">View More Product</a>
+
+    </div>
+
+    <footer class="bg-dark text-while pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-0 mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Kick Circle!</h5>
+                    <p class="text-light">Tempat kamu cari sepatu ori terpercaya dan murah pastinya! Belanja di Kick
+                        Circle!</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Product</h5>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nike Mercurial Air Zoom</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Adidas Yeezy</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nike Air Force 1</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Vans Old Skool</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">For More</h5>
+                    <p>
+                        <a href="https://instagram.com/whoisjiko_?igshid=MzNlNGNkZWQ4Mg==" class="text-white"
+                            style="text-decoration: none;">Instagram : @whoisjiko</a>
+                    </p>
+                    <p>
+                        <a href="https://instagram.com/dimas1804?igshid=OGQ5ZDc2ODk2ZA==" class="text-white"
+                            style="text-decoration: none;">Instagram : @dimas1804</a>
+                    </p>
+                    <p>
+                        <a href="https://instagram.com/rmdhn_354?igshid=OGQ5ZDc2ODk2ZA==" class="text-white"
+                            style="text-decoration: none;">Instagram : @rmdhn_354</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">More Contact</h5>
+                    <p class="text-white">
+                        <i class="fas fa-home mr-3 text-white"></i> Sleman, Jogjakarta 261,ID
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope mr-3 text-white"></i> kickthecircle@gmail.com
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-phone mr-3 text-white"></i> +62 824453435202
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-print mr-3 text-white"></i> +92 3166526389445
+                    </p>
+
+                </div>
+
+            </div>
+            <hr class="mb-4">
+
+            <div class="col-md-auto col-lg-auto">
+                <p class="text-white">Copyright ©2023 All right reserved by :
+                    <a href="home.html" style="text-decoration: none;">
+                        <strong class="text-warning">Kick Circle!</strong>
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-md-auto col-lg-auto">
+                <div class="text-center text-md-right">
+
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
