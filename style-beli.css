@@ -90,10 +90,12 @@ label {
 input[type="text"],
 textarea,
 input[type="email"] {
+    background-color: #1d232a;
+    color: white;
     width: 100%;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border-color: #1d232a;
     border-radius: 4px;
     box-sizing: border-box;
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Belanosima', sans-serif;
     background: url(../asset/background.webp);
 }
 
@@ -37,11 +37,8 @@ header {
     z-index: 100;
     list-style: none;
     display: flex;
-    margin-top: 5px;
+    margin-top: 20px;
     top: 80px;
-}
-.nav-bar ul li {
-    margin-right: 25px;
 }
 
 .nav-bar ul li a {
@@ -53,6 +50,10 @@ header {
     transition: .2s;
     margin: 0 5px;
     text-decoration: none;
+}
+
+.nav-bar ul li {
+    margin-right: 25px;
 }
 
 .nav-bar ul li a:hover {
