@@ -1,6 +1,5 @@
 body {
     font-family: 'Belanosima', sans-serif;
-    background-color: #f8f9fa;
     background: url(asset/background.webp);
 }
 
@@ -90,8 +89,8 @@ label {
 input[type="text"],
 textarea,
 input[type="email"] {
-    background-color: #1d232a;
-    color: white;
+    background-color: #111;
+    color: #ffffff;
     width: 100%;
     padding: 8px;
     font-size: 16px;
