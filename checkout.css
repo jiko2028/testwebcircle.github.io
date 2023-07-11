@@ -108,6 +108,7 @@ header {
 .containeer form .row .col .inputBox span{
   margin-bottom: 10px;
   display: block;
+  
 }
 
 .containeer form .row .col .inputBox input{
@@ -117,6 +118,7 @@ header {
   font-size: 15px;
   text-transform: none;
   background-color: #111;
+  color: white;
 
 }
 
